@@ -32,15 +32,15 @@ jobs:
         run: python -m pip install --upgrade pip setuptools wheel
       
       - name: Install dependencies
-        run: python -m pip install -r requirements.txt
+        run: python -m pip install -r 02-role-of-mlops/src/requirements.txt
       
       - name: Train the model
         run: | 
-            python train.py 
-            ls -la artifacts
+            python 02-role-of-mlops/src/train.py 
+            ls -la 02-role-of-mlops/src/artifacts
 
       - name: Upload artifcats
         uses: actions/upload-artifact@v4
         with:
           name: ml-artifacts-${{ matrix.python-version }}-${{ github.run_id }}
-          path: artifacts
+          path: 02-role-of-mlops/src/artifacts
