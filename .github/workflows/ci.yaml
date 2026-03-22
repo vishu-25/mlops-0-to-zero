@@ -5,12 +5,12 @@ on:
     branches: [ main ]
     paths: 
       - '02-role-of-mlops/src/**'
-      - '.github/workflows/ci.yml'
+      - '.github/workflows/ci.yaml'
   pull_request:
     branches: [ main ]
     paths: 
       - '02-role-of-mlops/src/**'
-      - '.github/workflows/ci.yml'
+      - '.github/workflows/ci.yaml'
 
 jobs:
   matrix-pipx:
