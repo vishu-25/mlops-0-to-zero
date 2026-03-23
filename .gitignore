@@ -1,2 +1,9 @@
 .venv
 venv/
+temp-aws-keys.txt
+**/.terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+.terraform.tfstate.lock.info
