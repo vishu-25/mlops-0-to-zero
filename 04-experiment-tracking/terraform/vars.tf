@@ -33,3 +33,21 @@ variable "db_instance_class" {
   type = string
   default = "db.t3.micro"
 }
+
+variable "cluster_name" {
+  description = "EKS cluster name"
+  type        = string
+  default     = "mlflow-eks"
+}
+
+variable "node_instance_type" {
+  description = "EKS worker node instance type"
+  type        = string
+  default     = "t3.medium"
+}
+
+variable "desired_nodes" {
+  description = "Desired number of worker nodes"
+  type        = number
+  default     = 2
+}
